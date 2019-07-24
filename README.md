@@ -8,7 +8,7 @@ To get access to googleali wit react-native  follow the instructions
 npm install react-native-google-signin --save
 ```
 2) Update android/build.gradle with
-'''
+```
 dependencies{
     ...
         classpath 'com.google.gms:google-services:4.2.0'
@@ -17,13 +17,12 @@ dependencies{
 }
 ```
 3) Update android/settings.gradle with
-```
-include ':react-native-google-signin'
-project(':react-native-google-signin').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-google-signin/android')
+```include ':react-native-google-signin'
+   project(':react-native-google-signin').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-     google-signin/android')
 ```
 4) Update android/app/build.gradle with
-a)
-```
+```a)
+
 dependencies{
     implementation fileTree(dir: "libs", include: ["*.jar"])
         implementation(project(":react-native-google-signin"))
@@ -34,8 +33,8 @@ dependencies{
         ...
 }
 ```
-b) in the end of file
-```
+```b) in the end of file
+
 apply plugin: 'com.google.gms.google-services'
 ```
 5)  Go to https://console.firebase.google.com/u/0/
