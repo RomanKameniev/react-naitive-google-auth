@@ -101,8 +101,8 @@ react-native start
                     //Check if device has Google Play Services installed.
                     //Always resolves to true on iOS.
     showPlayServicesUpdateDialog: true,
-    });
-const userInfo = await GoogleSignin.signIn();
+    })
+    const userInfo = await GoogleSignin.signIn();
     console.log('User Info --> ', userInfo);
     this.setState({ userInfo: userInfo });
     } catch (error) {
@@ -161,15 +161,15 @@ const userInfo = await GoogleSignin.signIn();
                     </View>
             );
     }
-}
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-});
+    }
+    const styles = StyleSheet.create({
+        container: {
+            flex: 1,
+            backgroundColor: '#fff',
+            alignItems: 'center',
+            justifyContent: 'center',
+        },
+    });
 ```
 17) update your webclientid with webclient from https://console.developers.google.com/apis/credentials
 
