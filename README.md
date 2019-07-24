@@ -71,7 +71,7 @@ react-native start
 ```
     *This is th Example of google Sign in*/
     import React from 'react';
-    import { StyleSheet, Text, View, Alert } from 'react-native';
+    import { StyleSheet, Text, View, Alert, Button } from 'react-native';
     import {
         GoogleSignin,
             GoogleSigninButton,
